@@ -28,16 +28,16 @@ Each prompt has been developed through a minimum of 3 iterations (v1.0 → v1.1 
 
 | # | Prompt | Workflow Area | Final Version |
 |---|--------|---------------|---------------|
-| 01 | [Welcome Email — New Hire Onboarding](prompts/prompt-01-welcome-email.md) | HR Onboarding | v1.2 ✅ |
-| 02 | [Job Advertisement — Retail Vacancy](prompts/prompt-02-job-advertisement.md) | Recruitment | v1.2 ✅ |
-| 03 | [Performance Review Summary](prompts/prompt-03-performance-review.md) | Performance Management | v1.2 ✅ |
-| 04 | [HR Policy Summary — Plain English](prompts/prompt-04-policy-summary.md) | Compliance Communication | v1.2 ✅ |
-| 05 | [Structured Interview Question Set](prompts/prompt-05-interview-questions.md) | Recruitment | v1.2 ✅ |
-| 06 | [Exit Interview Summary Report](prompts/prompt-06-exit-interview.md) | Retention Analysis | v1.2 ✅ |
-| 07 | [Disciplinary Letter — First Written Warning](prompts/prompt-07-disciplinary-letter.md) | Conduct Management | v1.2 ✅ |
-| 08 | [Training Needs Analysis Summary](prompts/prompt-08-training-needs.md) | Learning & Development | v1.2 ✅ |
-| 09 | [Leave Request Response](prompts/prompt-09-leave-response.md) | Operational HR | v1.2 ✅ |
-| 10 | [Recruitment Pipeline Status Report](prompts/prompt-10-recruitment-report.md) | HR Reporting | v1.2 ✅ |
+| 01 | [Welcome Email — New Hire Onboarding](prompts/prompt-01-welcome-email.md) | HR Onboarding | v1.2  |
+| 02 | [Job Advertisement — Retail Vacancy](prompts/prompt-02-job-advertisement.md) | Recruitment | v1.2  |
+| 03 | [Performance Review Summary](prompts/prompt-03-performance-review.md) | Performance Management | v1.2  |
+| 04 | [HR Policy Summary — Plain English](prompts/prompt-04-policy-summary.md) | Compliance Communication | v1.2  |
+| 05 | [Structured Interview Question Set](prompts/prompt-05-interview-questions.md) | Recruitment | v1.2  |
+| 06 | [Exit Interview Summary Report](prompts/prompt-06-exit-interview.md) | Retention Analysis | v1.2  |
+| 07 | [Disciplinary Letter — First Written Warning](prompts/prompt-07-disciplinary-letter.md) | Conduct Management | v1.2  |
+| 08 | [Training Needs Analysis Summary](prompts/prompt-08-training-needs.md) | Learning & Development | v1.2  |
+| 09 | [Leave Request Response](prompts/prompt-09-leave-response.md) | Operational HR | v1.2  |
+| 10 | [Recruitment Pipeline Status Report](prompts/prompt-10-recruitment-report.md) | HR Reporting | v1.2  |
 
 ---
 
