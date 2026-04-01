@@ -11,9 +11,9 @@
 ### v1.0 — Initial Draft
 
 #### Prompt Text
-```
+
 Summarise exit interview feedback.
-```
+
 
 #### Intended Workflow or Task
 Post-exit documentation — capturing key themes from departing employee interviews for HR reporting and retention strategy development.
@@ -36,9 +36,9 @@ AI with no data input invents reasons for departure. Completely unusable and pot
 **Lesson learned:** Anonymisation instruction and escalation flags are necessary additions before this can be used safely.
 
 #### Prompt Text
-```
+
 You are an HR analyst. Summarise the following exit interview notes for [EMPLOYEE_NAME] ([JOB_TITLE], [STORE_LOCATION]). Identify: main reasons for leaving, satisfaction levels, and any improvement suggestions. Notes: [INTERVIEW_NOTES]
-```
+
 
 #### Intended Workflow or Task
 HR coordinator inputs interview notes after exit interview. AI generates summary for HR manager review and inclusion in quarterly turnover report.
@@ -61,11 +61,11 @@ Named exit data is sensitive — risk of summary retaining identifiable details 
 **Lesson learned:** Active risk-detection features (escalation flags) transform passive summaries into governance tools that add real operational value.
 
 #### Prompt Text
-```
+
 You are an HR analyst preparing an exit interview report for internal HR use only. Using the interview notes provided, write a structured summary with: (1) Primary Reason for Leaving (2 sentences), (2) Satisfaction Ratings if mentioned (bullet points: workload, management, pay, culture), (3) Suggestions for Improvement (2–3 bullet points), (4) Recommended Action for HR (1 sentence). Maximum 200 words. Use neutral, professional language. Do not include specific names, dates, or details that could identify the individual in aggregated reports. Flag any mention of workplace safety, discrimination, or harassment with: [⚠ ESCALATION REQUIRED — notify HR Manager immediately].
 
 Interview Notes: [INTERVIEW_NOTES]
-```
+
 
 #### Intended Workflow or Task
 HR coordinator inputs notes after exit interview. AI generates individual summary. HR manager reviews all outputs. Anonymised summaries fed into quarterly turnover analysis. Escalation flag triggers immediate HR manager notification and follow-up process.
