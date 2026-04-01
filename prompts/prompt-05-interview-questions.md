@@ -11,9 +11,9 @@
 ### v1.0 — Initial Draft
 
 #### Prompt Text
-```
+
 Give me interview questions for a retail job.
-```
+
 
 #### Intended Workflow or Task
 Pre-interview preparation — generating structured question sets for hiring managers across 40 store locations.
@@ -36,9 +36,9 @@ Generic questions may be legally risky if they inadvertently touch on personal c
 **Lesson learned:** Must add an explicit EEO exclusion list to prevent legally problematic questions from appearing.
 
 #### Prompt Text
-```
+
 You are an HR recruitment specialist. Generate structured interview questions for the role of [JOB_TITLE] at a retail company. Include behavioural and situational questions. Map questions to key competencies for the role.
-```
+
 
 #### Intended Workflow or Task
 Hiring manager submits role title. HR generates question set and sends to store manager at least 48 hours before the interview.
@@ -61,9 +61,9 @@ Questions touching on family status, age, or disability may appear if prompt doe
 **Lesson learned:** Legal safeguards must be explicitly baked into the prompt — they cannot be assumed or added at review stage.
 
 #### Prompt Text
-```
+
 You are an HR specialist designing a structured interview guide for an Australian retail company. Generate 10 interview questions for the role of [JOB_TITLE]. Include: (1) 4 behavioural questions (STAR format — "Tell me about a time..."), (2) 3 situational questions ("What would you do if..."), (3) 2 role-specific technical questions, (4) 1 closing question about motivation. For each question, note the competency it assesses. Do not include questions about: age, family status, nationality, religion, disability, or career plans beyond 12 months. Output format: numbered list with competency tag in brackets. Maximum 400 words.
-```
+
 
 #### Intended Workflow or Task
 Generated per vacancy by HR. Shared with hiring manager 48 hours before interview. Stored in ATS for reuse across similar roles. Refreshed every 6 months per role family to prevent familiarity bias.
