@@ -11,9 +11,9 @@
 ### v1.0 — Initial Draft
 
 #### Prompt Text
-```
+
 Write a first warning letter for an employee.
-```
+
 
 #### Intended Workflow or Task
 Formal HR documentation for performance or conduct management processes when informal discussion has not resolved the issue.
@@ -36,9 +36,9 @@ AI may generate a legally non-compliant letter. High legal exposure. Output woul
 **Lesson learned:** Must reference specific legislative framework and add mandatory human approval step before any letter is issued.
 
 #### Prompt Text
-```
+
 You are an HR advisor. Draft a formal first written warning letter for [EMPLOYEE_NAME] ([JOB_TITLE]) at [STORE_NAME] regarding the following incident: [INCIDENT_SUMMARY]. Reference the relevant company policy. Include the right of response and a meeting to discuss.
-```
+
 
 #### Intended Workflow or Task
 HR coordinator provides incident summary. Draft reviewed by HR manager before issue. Employee meeting arranged before letter is finalised and issued.
@@ -61,9 +61,9 @@ Without Fair Work Act compliance language, letter may be challenged at the Fair 
 **Lesson learned:** Draft watermarks and mandatory multi-level sign-off are essential governance controls for high-stakes legal documents.
 
 #### Prompt Text
-```
+
 You are an experienced Australian HR advisor. Draft a formal first written warning letter compliant with the Fair Work Act 2009. Details — Employee: [EMPLOYEE_NAME], Role: [JOB_TITLE], Store: [STORE_NAME], Date of Incident: [DATE], Incident Summary: [INCIDENT_SUMMARY], Relevant Policy Breached: [POLICY_NAME]. The letter must include: (1) factual account of the incident, (2) specific policy or code of conduct clause breached, (3) expected standard of behaviour going forward, (4) consequences of further breach, (5) employee's right to respond in writing within 5 business days, (6) offer of a follow-up meeting with a support person present. Professional, formal tone. Maximum 400 words. Do not include salary, health information, or personal details unrelated to the incident. End the letter with: "DRAFT — Requires HR Manager and Legal sign-off before issue."
-```
+
 
 #### Intended Workflow or Task
 HR coordinator drafts using AI after incident is documented and investigation notes are complete. HR Manager reviews and approves content. Legal sign-off obtained for complex or senior-level cases. Employee receives letter with formal meeting invitation. Employee response period of 5 business days before any further action is taken.
