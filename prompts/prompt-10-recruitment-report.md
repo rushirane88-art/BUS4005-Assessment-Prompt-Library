@@ -11,9 +11,9 @@
 ### v1.0 — Initial Draft
 
 #### Prompt Text
-```
+
 Write a recruitment status report.
-```
+
 
 #### Intended Workflow or Task
 Weekly or fortnightly HR reporting — updating management on open vacancies and recruitment pipeline progress across all 40 store locations.
@@ -36,9 +36,9 @@ AI fabricates specific candidate numbers, pipeline stages, and timelines with no
 **Lesson learned:** Management reports need an executive summary first and a visual status system (e.g. At Risk / On Track / Filled) for rapid scanning and decision-making.
 
 #### Prompt Text
-```
+
 You are an HR analyst. Using the following recruitment data, write a recruitment pipeline status report for management: [PIPELINE_DATA]. Include: open roles, candidates at each stage, and recommended priorities.
-```
+
 
 #### Intended Workflow or Task
 HR coordinator exports pipeline data from ATS and inputs into prompt. AI generates report draft for HR manager review before distribution to store GMs.
@@ -61,11 +61,11 @@ Management may misread dense paragraph summaries without an executive summary or
 **Lesson learned:** Visual status indicators (At Risk / On Track / Filled) drive faster management decisions and justify the investment in the tool to senior leadership.
 
 #### Prompt Text
-```
+
 You are an HR analyst producing a weekly recruitment pipeline report for senior retail management. Using the pipeline data provided, write a report with: (1) Executive Summary (3 sentences: total open roles, key risks, top priority action), (2) Pipeline by Role — table format with columns: Role | Store | Stage | Candidates | Status [At Risk / On Track / Filled], (3) Recommended Priority Actions (3 bullet points with owner and deadline), (4) Roles Closed This Period (list). Professional, concise tone. Maximum 400 words excluding the table. Do not include candidate names or contact details anywhere in the report.
 
 Pipeline Data: [PIPELINE_DATA]
-```
+
 
 #### Intended Workflow or Task
 HR coordinator exports ATS data every Monday morning and inputs into the prompt. AI generates complete report in approximately 3 minutes. HR manager reviews for accuracy and distributes to store GMs and the People and Culture team by 9am every Monday — replacing the previous 2-hour manual process.
