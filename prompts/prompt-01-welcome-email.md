@@ -11,9 +11,9 @@
 ### v1.0 — Initial Draft
 
 #### Prompt Text
-```
+
 Write a welcome email for a new employee.
-```
+
 
 #### Intended Workflow or Task
 Step 1 of the onboarding sequence — sent to new hire once contract is signed.
@@ -36,9 +36,9 @@ Minimal personalisation means low trust from the new hire. No governance issue b
 **Lesson learned:** Output format constraints (word limit, excluded content) are essential for business-ready outputs.
 
 #### Prompt Text
-```
+
 You are an HR onboarding specialist at a mid-size Australian retail company. Write a warm, professional welcome email for a new [JOB_TITLE] joining [STORE_NAME] on [START_DATE]. Include: a warm welcome, role overview, first-week schedule, and key contacts.
-```
+
 
 #### Intended Workflow or Task
 Step 1 of onboarding chain — triggered when HRIS confirms new hire. HR coordinator reviews and sends within 24 hours of confirmation.
@@ -61,9 +61,9 @@ RACE framework improves tone but lack of a length constraint produces variable o
 **Lesson learned:** Format constraints + explicit exclusions = reliable, deployable outputs.
 
 #### Prompt Text
-```
+
 You are an HR onboarding specialist at a mid-size Australian retail chain. Draft a warm, professional welcome email for a new [JOB_TITLE] joining [STORE_NAME] on [START_DATE]. Include: (1) warm welcome paragraph, (2) brief role overview (2 sentences), (3) first-week schedule highlights, (4) key contacts with names and roles, (5) one motivational closing sentence. Maximum 220 words. Do not include salary, contract, or payroll details.
-```
+
 
 #### Intended Workflow or Task
 Step 1 of HR onboarding chain. Triggered automatically when new hire status confirmed in HRIS. HR coordinator reviews output, personalises if needed, and sends within 24 hours.
