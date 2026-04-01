@@ -1,0 +1,92 @@
+# Prompt 06 — Exit Interview Summary Report
+
+**Business Field:** Retail HR Operations  
+**Workflow Task:** Retention Analysis and Turnover Reporting  
+**Current Version:** v1.2 
+
+---
+
+## Version History
+
+### v1.0 — Initial Draft
+
+#### Prompt Text
+```
+Summarise exit interview feedback.
+```
+
+#### Intended Workflow or Task
+Post-exit documentation — capturing key themes from departing employee interviews for HR reporting and retention strategy development.
+
+#### Problem Being Solved
+HR coordinators spend approximately 1 hour per exit interview writing up findings. With 440 exits per year, this is 440 hours of documentation time annually — exit data rarely analysed due to time burden.
+
+#### Automation Potential
+Very low — no data provided as input; AI fabricates plausible-sounding but entirely fictional feedback.
+
+#### Risks and Limitations
+AI with no data input invents reasons for departure. Completely unusable and potentially misleading for HR strategy. Risk of false data influencing retention decisions.
+
+---
+
+### v1.1 — Added Structured Input and Three Output Sections
+
+**What changed:** Added RACE role framing, structured interview notes as input, and 3 required output sections.  
+**Observed effect:** Useful individual summaries produced from real notes. However, one summary retained identifying details in the aggregated version shared more broadly — a privacy breach risk.  
+**Lesson learned:** Anonymisation instruction and escalation flags are necessary additions before this can be used safely.
+
+#### Prompt Text
+```
+You are an HR analyst. Summarise the following exit interview notes for [EMPLOYEE_NAME] ([JOB_TITLE], [STORE_LOCATION]). Identify: main reasons for leaving, satisfaction levels, and any improvement suggestions. Notes: [INTERVIEW_NOTES]
+```
+
+#### Intended Workflow or Task
+HR coordinator inputs interview notes after exit interview. AI generates summary for HR manager review and inclusion in quarterly turnover report.
+
+#### Problem Being Solved
+440 exit interviews per year at 1 hour each equals 440 hours. Exit data is rarely analysed due to the time burden, meaning turnover drivers go unaddressed and replacement costs continue unchecked.
+
+#### Automation Potential
+Medium — usable individual summaries from real notes. However, no anonymisation guidance included for aggregated reporting and no escalation mechanism for serious disclosures.
+
+#### Risks and Limitations
+Named exit data is sensitive — risk of summary retaining identifiable details in aggregated reports shared beyond the HR Manager. One output version retained identifying details in the aggregated version — flagged by HR Manager as a privacy breach.
+
+---
+
+### v1.2 — Final Version 
+
+**What changed:** Added anonymisation clause, escalation flag for serious disclosures, neutral tone instruction, 200-word cap, and privacy exclusions.  
+**Observed effect:** 3 escalation cases identified in first pilot quarter that had been missed in the manual process. HR Manager approved for full deployment.  
+**Lesson learned:** Active risk-detection features (escalation flags) transform passive summaries into governance tools that add real operational value.
+
+#### Prompt Text
+```
+You are an HR analyst preparing an exit interview report for internal HR use only. Using the interview notes provided, write a structured summary with: (1) Primary Reason for Leaving (2 sentences), (2) Satisfaction Ratings if mentioned (bullet points: workload, management, pay, culture), (3) Suggestions for Improvement (2–3 bullet points), (4) Recommended Action for HR (1 sentence). Maximum 200 words. Use neutral, professional language. Do not include specific names, dates, or details that could identify the individual in aggregated reports. Flag any mention of workplace safety, discrimination, or harassment with: [⚠ ESCALATION REQUIRED — notify HR Manager immediately].
+
+Interview Notes: [INTERVIEW_NOTES]
+```
+
+#### Intended Workflow or Task
+HR coordinator inputs notes after exit interview. AI generates individual summary. HR manager reviews all outputs. Anonymised summaries fed into quarterly turnover analysis. Escalation flag triggers immediate HR manager notification and follow-up process.
+
+#### Problem Being Solved
+440 exit interviews per year at 1 hour each equals 440 hours. Without systematic analysis, the company cannot identify and address turnover drivers — costing an estimated $3,000–$6,000 per retail replacement hire.
+
+#### Automation Potential
+**High** — estimated 80% time reduction per interview (60 min → ~12 min). Escalation flag adds automated risk detection at no additional cost. Anonymisation prevents privacy breaches in aggregated reporting shared across leadership.
+
+#### Risks and Limitations
+- **Privacy Risk:** Exit data may include sensitive personal disclosures. *Mitigation: Anonymisation instruction in prompt; outputs stored in secure HR system only; never shared outside HR team without further review.*
+- **Missed Escalation:** AI may not flag subtle or indirect complaints about serious matters. *Mitigation: HR manager always reviews original notes for all flagged and senior-level exits regardless of AI output.*
+- **Over-reliance:** HR may stop reading original notes entirely. *Mitigation: Policy requires HR manager review of original notes for all flagged cases; documented in HR procedures.*
+
+---
+
+## Audit Log
+
+| Version | Change Made | Observed Effect | Lesson Learned |
+|---------|-------------|-----------------|----------------|
+| v1.0 | No input data provided | AI fabricated departure reasons entirely | Must provide actual interview notes as input |
+| v1.1 | Added structured input and 3 output sections | Useful individual summaries; no privacy safeguards | Anonymisation and escalation flags are necessary |
+| v1.2 | Anonymisation, escalation flag, neutral tone, word cap | 3 escalation cases identified in pilot; HR Manager approved | Risk-detection features transform summaries into governance tools |
