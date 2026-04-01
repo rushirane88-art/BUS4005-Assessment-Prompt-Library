@@ -1,0 +1,92 @@
+# Prompt 10 — Recruitment Pipeline Status Report
+
+**Business Field:** Retail HR Operations  
+**Workflow Task:** HR Reporting and Management Communication  
+**Current Version:** v1.2 
+
+---
+
+## Version History
+
+### v1.0 — Initial Draft
+
+#### Prompt Text
+```
+Write a recruitment status report.
+```
+
+#### Intended Workflow or Task
+Weekly or fortnightly HR reporting — updating management on open vacancies and recruitment pipeline progress across all 40 store locations.
+
+#### Problem Being Solved
+HR coordinator spends approximately 2 hours per report manually compiling data from the ATS and formatting it for management distribution. At a weekly cadence, this is over 100 hours per year on a single reporting task.
+
+#### Automation Potential
+Very low — no data input provided; AI cannot generate real pipeline figures and will fabricate them.
+
+#### Risks and Limitations
+AI fabricates specific candidate numbers, pipeline stages, and timelines with no factual basis. The output is entirely fictional and dangerous in a management reporting context where decisions are made based on the data.
+
+---
+
+### v1.1 — Added Structured Data Input and Three Report Sections
+
+**What changed:** Added RACE role framing, structured ATS pipeline data as input, and 3 required report sections.  
+**Observed effect:** Functional report produced from real data. However, GM requested an executive summary at the top and some form of visual status indicator — dense paragraph format was difficult to scan quickly.  
+**Lesson learned:** Management reports need an executive summary first and a visual status system (e.g. At Risk / On Track / Filled) for rapid scanning and decision-making.
+
+#### Prompt Text
+```
+You are an HR analyst. Using the following recruitment data, write a recruitment pipeline status report for management: [PIPELINE_DATA]. Include: open roles, candidates at each stage, and recommended priorities.
+```
+
+#### Intended Workflow or Task
+HR coordinator exports pipeline data from ATS and inputs into prompt. AI generates report draft for HR manager review before distribution to store GMs.
+
+#### Problem Being Solved
+2 hours per report at a weekly cadence equals 96+ hours per year for a task that only requires data formatting and basic analysis — no specialist judgement required.
+
+#### Automation Potential
+Medium — functional report from real data. However, no executive summary and no visual status indicators for management scanning, limiting usefulness for senior leadership.
+
+#### Risks and Limitations
+Management may misread dense paragraph summaries without an executive summary or status indicators. No quick visual cue identifies at-risk vacancies requiring immediate action. Report not yet optimised for senior leadership consumption.
+
+---
+
+### v1.2 — Final Version 
+
+**What changed:** Added executive summary section, status labelling system (At Risk / On Track / Filled), priority action owners with deadlines, candidate privacy exclusion, and 400-word narrative cap.  
+**Observed effect:** GM adopted as standard Monday morning reporting format immediately. 2 critical vacancies were escalated within 24 hours using the status system in the first week of deployment.  
+**Lesson learned:** Visual status indicators (At Risk / On Track / Filled) drive faster management decisions and justify the investment in the tool to senior leadership.
+
+#### Prompt Text
+```
+You are an HR analyst producing a weekly recruitment pipeline report for senior retail management. Using the pipeline data provided, write a report with: (1) Executive Summary (3 sentences: total open roles, key risks, top priority action), (2) Pipeline by Role — table format with columns: Role | Store | Stage | Candidates | Status [At Risk / On Track / Filled], (3) Recommended Priority Actions (3 bullet points with owner and deadline), (4) Roles Closed This Period (list). Professional, concise tone. Maximum 400 words excluding the table. Do not include candidate names or contact details anywhere in the report.
+
+Pipeline Data: [PIPELINE_DATA]
+```
+
+#### Intended Workflow or Task
+HR coordinator exports ATS data every Monday morning and inputs into the prompt. AI generates complete report in approximately 3 minutes. HR manager reviews for accuracy and distributes to store GMs and the People and Culture team by 9am every Monday — replacing the previous 2-hour manual process.
+
+#### Problem Being Solved
+2 hours per report at 52 weeks equals 104 hours per year of manual compilation. Delays in recruitment visibility cost stores productivity during unfilled shift coverage — estimated at $200–$400 per unfilled shift day across the 40-store network.
+
+#### Automation Potential
+**High** — estimated 95% time reduction (2 hours → ~8 minutes including review). Status labelling enables management to identify at-risk vacancies at a glance without reading the full narrative. Executive summary format matches senior leadership communication preferences and drives faster action.
+
+#### Risks and Limitations
+- **Data Accuracy:** Report quality depends entirely on the accuracy of the ATS export provided. *Mitigation: HR coordinator validates ATS data before input each week; any discrepancies are flagged and resolved before report is distributed.*
+- **Privacy:** Candidate names must not appear in the management-distributed report. *Mitigation: Explicit exclusion mandated in the prompt; HR coordinator spot-checks each output before distribution.*
+- **Over-reliance on Status Labels:** Management may not read the narrative context behind At Risk flags and act on status alone. *Mitigation: Priority Actions section (item 3) forces a narrative explanation for all At Risk items, ensuring context is always provided.*
+
+---
+
+## Audit Log
+
+| Version | Change Made | Observed Effect | Lesson Learned |
+|---------|-------------|-----------------|----------------|
+| v1.0 | No data input provided | AI fabricated entire pipeline — completely unusable and misleading | Reports always need real structured data as input |
+| v1.1 | Added structured ATS data input and 3 report sections | Functional output; missing executive summary and status indicators | Management needs a scannable visual format for quick decisions |
+| v1.2 | Executive summary, status labels, priority action owners, privacy exclusion | Adopted as standard by GM; 2 critical vacancies escalated in week 1 | Visual status indicators drive faster management decisions |
