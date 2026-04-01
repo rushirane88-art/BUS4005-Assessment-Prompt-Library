@@ -11,9 +11,9 @@
 ### v1.0 — Initial Draft
 
 #### Prompt Text
-```
+
 Write a job ad for a retail store manager.
-```
+
 
 #### Intended Workflow or Task
 First step in the recruitment pipeline when a vacancy is confirmed by store management.
@@ -36,9 +36,9 @@ No constraint on discriminatory language. Ad may attract unsuitable candidates a
 **Lesson learned:** Legal compliance elements (EEO) and salary must be explicit requirements in the prompt.
 
 #### Prompt Text
-```
+
 You are an HR recruitment specialist for an Australian retail chain. Write a job advertisement for a [JOB_TITLE] position at [STORE_LOCATION]. Include responsibilities, qualifications required, and what the company offers. Use an engaging, professional tone.
-```
+
 
 #### Intended Workflow or Task
 Triggered when vacancy is confirmed in the ATS. Recruitment coordinator inputs role details and reviews output before posting to Seek or LinkedIn.
@@ -61,9 +61,9 @@ No explicit EEO or inclusion language. Risk of unintentionally exclusive languag
 **Lesson learned:** Compliance elements must be mandated in prompt, not assumed by AI.
 
 #### Prompt Text
-```
+
 You are a recruitment specialist for an Australian retail chain. Write a job advertisement for a [JOB_TITLE] at [STORE_LOCATION]. Structure the ad with these exact sections: (1) Role Overview (3 sentences), (2) Key Responsibilities (5 bullet points), (3) What We Are Looking For (4 criteria), (4) What We Offer (3 benefits), (5) How to Apply (2 sentences). Include EEO statement: "We welcome applications from people of all backgrounds." Salary range: [SALARY_RANGE]. Maximum 350 words. Use an engaging but professional tone. Do not include specific names of managers or internal HR codes.
-```
+
 
 #### Intended Workflow or Task
 Triggered in ATS when vacancy is approved. Coordinator inputs `[JOB_TITLE]`, `[STORE_LOCATION]`, and `[SALARY_RANGE]`. Output reviewed and posted to Seek and LinkedIn within 2 hours.
