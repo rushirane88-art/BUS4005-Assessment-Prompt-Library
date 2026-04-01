@@ -11,9 +11,9 @@
 ### v1.0 — Initial Draft
 
 #### Prompt Text
-```
+
 Identify training needs for retail staff.
-```
+
 
 #### Intended Workflow or Task
 Annual L&D planning — identifying skill gaps to inform the training budget and calendar for the coming year across all 40 stores.
@@ -36,9 +36,9 @@ Generic training recommendations waste budget on low-priority topics. No connect
 **Lesson learned:** Add business impact framing to make recommendations actionable for senior leadership and budget decision-makers.
 
 #### Prompt Text
-```
+
 You are an L&D specialist. Based on the following manager feedback, identify the top training needs for the [TEAM] team at [STORE_NAME]. Feedback: [MANAGER_FEEDBACK]. Recommend training priorities and justify each.
-```
+
 
 #### Intended Workflow or Task
 L&D coordinator inputs manager feedback after quarterly reviews. AI identifies patterns and recommends priorities for inclusion in HR planning and budget requests.
@@ -61,11 +61,11 @@ Recommendations may reflect what managers report rather than actual evidence-bas
 **Lesson learned:** Business impact framing transforms AI summaries into decision-ready documents that senior leadership can act on directly.
 
 #### Prompt Text
-```
+
 You are an L&D specialist preparing a training needs analysis for a retail management team. Using the performance feedback provided, identify the top 3 training priorities for the [TEAM] team at [STORE_NAME] (review period: [PERIOD]). For each priority include: (1) skill gap identified, (2) evidence from feedback, (3) business impact if unaddressed (time, cost, or risk), (4) recommended training format (e.g. on-the-job coaching, online module, external course), (5) estimated effort to address in hours. Format: 3 numbered priority sections. Maximum 350 words. Tone: objective, evidence-based. Do not include individual employee names — refer to roles only.
 
 Manager Feedback: [MANAGER_FEEDBACK]
-```
+
 
 #### Intended Workflow or Task
 L&D coordinator inputs quarterly manager feedback for each team. AI generates training priorities summary. HR Manager and L&D lead review and validate. Output submitted to GM People and Culture with budget request attached for approval.
