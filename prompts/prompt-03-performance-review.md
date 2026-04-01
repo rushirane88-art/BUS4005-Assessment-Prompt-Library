@@ -36,9 +36,9 @@ AI may invent performance data with no safeguard in place. Completely unusable a
 **Lesson learned:** Remove AI from rating decisions entirely — keep it as a drafting tool only.
 
 #### Prompt Text
-```
+
 You are an HR business partner. Based on the following performance notes for [EMPLOYEE_NAME] ([JOB_TITLE]), write a professional performance review summary: [MANAGER_NOTES]. Include: key achievements, areas for development, and recommended rating.
-```
+
 
 #### Intended Workflow or Task
 Manager submits review notes via HR portal. Prompt takes notes as input and generates draft summary. HR partner reviews before sharing with employee.
@@ -61,11 +61,10 @@ AI rating recommendation may conflict with manager judgement and be adopted with
 **Lesson learned:** AI should draft, not decide — especially on sensitive HR matters like performance ratings.
 
 #### Prompt Text
-```
+
 You are an HR business partner. Using the manager's performance notes below, draft a professional, balanced performance review summary for [EMPLOYEE_NAME] ([JOB_TITLE]) covering the review period [PERIOD]. Structure the output: (1) Summary of Performance (3 sentences), (2) Key Achievements (3 bullet points with evidence), (3) Development Areas (2 areas with recommended actions), (4) Suggested Focus for Next Period (2 sentences). Do not recommend a performance rating — this is the manager's decision. Maximum 280 words. Tone: professional, constructive, specific. Do not include salary, disciplinary history, or personal details.
 
 Manager Notes: [MANAGER_NOTES]
-```
 
 #### Intended Workflow or Task
 Triggered after manager completes review form in HR portal. HR business partner provides manager notes as input, reviews AI draft, and shares with employee only after manager approval.
