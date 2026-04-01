@@ -1,0 +1,89 @@
+# Prompt 05 — Structured Interview Question Set
+
+**Business Field:** Retail HR Operations  
+**Workflow Task:** Recruitment — Pre-Interview Preparation  
+**Current Version:** v1.2 
+
+---
+
+## Version History
+
+### v1.0 — Initial Draft
+
+#### Prompt Text
+```
+Give me interview questions for a retail job.
+```
+
+#### Intended Workflow or Task
+Pre-interview preparation — generating structured question sets for hiring managers across 40 store locations.
+
+#### Problem Being Solved
+Hiring managers spend approximately 45 minutes per role preparing interview questions. Inconsistent question banks across 40 stores lead to variable interview quality and candidate experience.
+
+#### Automation Potential
+Very low — output too generic; no competency mapping or legal safety check included.
+
+#### Risks and Limitations
+Generic questions may be legally risky if they inadvertently touch on personal characteristics. Poor questions produce poor hiring decisions and inconsistent candidate assessments.
+
+---
+
+### v1.1 — Added Competency Mapping and RACE Role
+
+**What changed:** Added RACE role framing, behavioural and situational framing, and competency mapping requirement.  
+**Observed effect:** Significantly better structure and competency alignment. However, one generated question asked about "long-term career plans beyond 5 years" — legally sensitive in some employment contexts.  
+**Lesson learned:** Must add an explicit EEO exclusion list to prevent legally problematic questions from appearing.
+
+#### Prompt Text
+```
+You are an HR recruitment specialist. Generate structured interview questions for the role of [JOB_TITLE] at a retail company. Include behavioural and situational questions. Map questions to key competencies for the role.
+```
+
+#### Intended Workflow or Task
+Hiring manager submits role title. HR generates question set and sends to store manager at least 48 hours before the interview.
+
+#### Problem Being Solved
+Approximately 45 minutes per role for question preparation. Inconsistent standards across 40 stores result in variable candidate assessment quality and increased legal exposure.
+
+#### Automation Potential
+Medium — competency-mapped output produced but no guidance on legally sensitive topics to avoid. One generated question required manual removal due to legal sensitivity.
+
+#### Risks and Limitations
+Questions touching on family status, age, or disability may appear if prompt does not explicitly exclude them. Legal review not built into the workflow at this version. Risk of EEO non-compliance if output is used without review.
+
+---
+
+### v1.2 — Final Version 
+
+**What changed:** Added STAR format requirement, explicit legal exclusion list, competency tags per question, 400-word output cap.  
+**Observed effect:** Legal team approved format. Deployed across 8 pilot stores. Interview feedback scores improved 18% in pilot group versus control stores.  
+**Lesson learned:** Legal safeguards must be explicitly baked into the prompt — they cannot be assumed or added at review stage.
+
+#### Prompt Text
+```
+You are an HR specialist designing a structured interview guide for an Australian retail company. Generate 10 interview questions for the role of [JOB_TITLE]. Include: (1) 4 behavioural questions (STAR format — "Tell me about a time..."), (2) 3 situational questions ("What would you do if..."), (3) 2 role-specific technical questions, (4) 1 closing question about motivation. For each question, note the competency it assesses. Do not include questions about: age, family status, nationality, religion, disability, or career plans beyond 12 months. Output format: numbered list with competency tag in brackets. Maximum 400 words.
+```
+
+#### Intended Workflow or Task
+Generated per vacancy by HR. Shared with hiring manager 48 hours before interview. Stored in ATS for reuse across similar roles. Refreshed every 6 months per role family to prevent familiarity bias.
+
+#### Problem Being Solved
+Approximately 45 minutes per role for question preparation, multiplied across 40 stores and 440 vacancies per year. Inconsistent question banks lead to variable interview quality, poor candidate experience, and growing legal exposure.
+
+#### Automation Potential
+**High** — estimated 85% time reduction per role (45 min → ~7 min review). Competency-mapped question sets improve hiring decision consistency across all stores. Human review retained; legal exclusions mandated directly in prompt.
+
+#### Risks and Limitations
+- **Legal Risk:** Without explicit EEO exclusions, AI may generate legally problematic questions. *Mitigation: Prohibited topics listed explicitly in the prompt; HR manager final review before any use.*
+- **Role Specificity:** Generic questions may not reflect actual job requirements for specialist or senior roles. *Mitigation: HR specialist reviews and tailors technical questions to match the current job description before distribution.*
+
+---
+
+## Audit Log
+
+| Version | Change Made | Observed Effect | Lesson Learned |
+|---------|-------------|-----------------|----------------|
+| v1.0 | Generic — no role, structure, or competency map | 12 generic questions; no competency alignment | Competency mapping and role context are essential |
+| v1.1 | Added RACE role and behavioural/situational framing | Better structure; one legally sensitive question generated | Must add explicit EEO exclusion list to prompt |
+| v1.2 | Legal exclusions, STAR framing, competency tags, word cap | Legal-approved; 18% improvement in interview scores in pilot | Legal safeguards must be built into the prompt itself |
