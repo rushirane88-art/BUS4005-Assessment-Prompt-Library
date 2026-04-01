@@ -11,9 +11,9 @@
 ### v1.0 — Initial Draft
 
 #### Prompt Text
-```
+
 Write a message about a leave conflict.
-```
+
 
 #### Intended Workflow or Task
 Operational HR — communicating rostering decisions, approved leave, and declined leave requests to retail store staff.
@@ -36,9 +36,9 @@ Impersonal messages increase staff dissatisfaction and contribute to voluntary t
 **Lesson learned:** Channel matters significantly — shorten and adapt format for mobile messaging context.
 
 #### Prompt Text
-```
+
 You are a retail store manager. Write a professional, empathetic message to [EMPLOYEE_NAME] explaining that their leave request for [DATES] has been [approved/declined] because [REASON]. Reference the company leave policy.
-```
+
 
 #### Intended Workflow or Task
 Manager inputs leave decision details. AI drafts message. Manager sends directly or with minor personalisation via Teams or WhatsApp.
@@ -61,9 +61,9 @@ Format too formal for the context. Retail staff communicate via mobile messaging
 **Lesson learned:** Channel-appropriate format (mobile, short, warm) is as important as content quality for driving real-world adoption.
 
 #### Prompt Text
-```
+
 You are a retail store manager. Write a brief, professional and empathetic message to [EMPLOYEE_NAME] about their leave request for [DATES]. Decision: [APPROVED or DECLINED]. If declined, reason: [BRIEF_REASON]. If approved, include confirmation and any conditions attached. Tone: warm, direct, respectful. Format: suitable for a team messaging app such as Microsoft Teams or WhatsApp — conversational, maximum 80 words. Do not include policy jargon, legal language, or references to disciplinary consequences. End with an invitation to discuss further if needed.
-```
+
 
 #### Intended Workflow or Task
 Manager selects decision type (approved/declined), inputs dates and reason into the prompt template. AI generates message in under 10 seconds. Manager sends via Teams or WhatsApp with one review and minimal editing. Total time approximately 2 minutes versus 15 minutes for manual drafting.
