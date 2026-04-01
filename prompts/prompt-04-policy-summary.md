@@ -11,9 +11,9 @@
 ### v1.0 — Initial Draft
 
 #### Prompt Text
-```
+
 Summarise this HR policy.
-```
+
 
 #### Intended Workflow or Task
 Compliance communication — translating legal policy documents into staff-facing plain-English summaries for distribution.
@@ -36,9 +36,9 @@ AI may misrepresent legal obligations without guardrails. Output is a legal para
 **Lesson learned:** Compliance content requires a mandatory disclaimer and all sections must be explicitly numbered.
 
 #### Prompt Text
-```
+
 You are an HR communications specialist. Summarise the following HR policy in plain English for frontline retail staff who may not have formal HR knowledge. Policy text: [POLICY_TEXT]. Include: what it means for employees, key rules, and what to do if unsure.
-```
+
 
 #### Intended Workflow or Task
 HR compliance officer inputs policy text. Output reviewed by HR manager and legal team before distribution to all store staff.
@@ -61,11 +61,11 @@ AI may simplify to the point of misrepresenting legal obligations. Legal review 
 **Lesson learned:** Disclaimers and fabrication-prevention instructions are non-negotiable for all compliance content.
 
 #### Prompt Text
-```
+
 You are an HR communications specialist writing for frontline retail employees at Year 10 reading level. Using the policy text provided, write a plain-English summary with these sections: (1) What this policy is about (2 sentences), (2) What it means for you as an employee (4 bullet points), (3) Key rules to know (3 bullet points), (4) What to do if you have questions (2 sentences, refer to HR team). End with this disclaimer: "This summary is a guide only. Refer to the full policy document for complete details." Maximum 250 words. Do not add information not present in the source policy.
 
 Policy Text: [POLICY_TEXT]
-```
+
 
 #### Intended Workflow or Task
 HR compliance officer provides policy text as input. AI generates draft summary. HR manager and legal counsel review before distribution. Updated automatically whenever the source policy changes.
